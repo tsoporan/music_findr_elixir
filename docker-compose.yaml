@@ -6,9 +6,10 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: musicfindr_dev
     restart: always
     volumes:
-      - pgdata:/var/lib/postgresql/data
+      - ./pgdata:/var/lib/postgresql/data
 
   web:
     build:
@@ -18,7 +19,7 @@ services:
       PG_PASSWORD: postgres
       PG_HOST: db
       PG_PORT: 5432
-      PG_DATABASE: musicfindr
+      PG_DATABASE: musicfindr_dev
     ports:
       - "4000:4000"
     depends_on:

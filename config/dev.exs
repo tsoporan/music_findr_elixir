@@ -68,8 +68,8 @@ config :phoenix, :plug_init_mode, :runtime
 
 # Configure your database
 config :music_findr, MusicFindr.Repo,
-  username: "tsoporan",
-  password: "",
-  database: "music_findr",
-  hostname: "localhost",
+  username: "postgres",
+  password: "postgres",
+  database: "musicfindr_dev",
+  hostname: "db",
   pool_size: 10
