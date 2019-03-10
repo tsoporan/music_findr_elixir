@@ -1,3 +1,10 @@
 # MusicFindr
 
-TBD
+## Setup
+
+#### Requirements
+  - docker-compose
+
+```bash
+docker-compose up
+```
